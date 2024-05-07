@@ -69,6 +69,8 @@ const Form = () => {
                     <option value="other">Other</option>  
                 </select>
             </div>
+            <div className="input-control">
+                <textarea name="description" valu
             <div className="submit-btn">
                 <button >Add Income</button>
             </div>
