@@ -24,11 +24,12 @@ const Form = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
+        
         addIncome(inputState)
     }
 
     return (
-        <FormStyled>
+        <FormStyled onSubmit={handleSubmit}>
             <div className="input-control">
                 <input 
                 type="text" 
@@ -70,7 +71,8 @@ const Form = () => {
                 </select>
             </div>
             <div className="input-control">
-                <textarea name="description" valu
+                <textarea name="description" value={description} placeholder='Add A Reference' id="description" cols="30" rows="4" onChange={handleInput('description')}></textarea>
+            </div>
             <div className="submit-btn">
                 <button >Add Income</button>
             </div>
