@@ -54,12 +54,11 @@ function App() {
     </AppStyled>
   );
 }
-
 const AppStyled = styled.div`
-   height: 100vh;
-   background-image: url(${props => props.bg});
-   position: relative;
-   main{
+  height: 100vh;
+  background-image: url(${props => props.bg});
+  position: relative;
+  main{
     flex: 1;
     background: rgba(252, 246, 249, 0.78);
     border: 3px solid #FFFFFF;
@@ -68,8 +67,8 @@ const AppStyled = styled.div`
     overflow-x: hidden;
     &::-webkit-scrollbar{
       width: 0;
-   }
-
+    }
+  }
 `;
 
 export default App; 
