@@ -33,7 +33,7 @@ export const GlobalProvider = ({children}) => {
     }
 
     return (
-        <GlobalContext.Provider value={{addIncome,getIncomes,incomes}}>
+        <GlobalContext.Provider value={{addIncome,getIncomes,incomes,deleteIncome}}>
             {children}
         </GlobalContext.Provider>
     )
