@@ -1,32 +1,30 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import { InnerLayout } from '../../styles/Layouts';
 import { useGlobalContext } from '../../context/globalContext';
+import { InnerLayout } from '../../styles/Layouts';
 import Form from '../Form/Form';
 import IncomeItem from '../IncomeItem/IncomeItem';
 import ExpenseForm from './ExpenseForm';
 
-
-function Expenses(){
-
-    const {addIncome,expenses,getExpenses,deleteExpense,totalExpenses} = useGlobalContext()
+function Expenses() {
+    const {addIncome,expenses, getExpenses, deleteExpense, totalExpenses} = useGlobalContext()
 
     useEffect(() =>{
         getExpenses()
     }, [])
-
-    return(
+    return (
         <ExpenseStyled>
             <InnerLayout>
-            <h1>Expenses</h1>
-            <h2 className="total-income">Total Expenses: <span>${totalExpenses()}</span></h2>
+                <h1>Expenses</h1>
+                <h2 className="total-income">Total Expense: <span>${totalExpenses()}</span></h2>
                 <div className="income-content">
                     <div className="form-container">
-                        <ExpenseForm/>
+                        <ExpenseForm />
                     </div>
                     <div className="incomes">
                         {expenses.map((income) => {
                             const {_id, title, amount, date, category, description, type} = income;
+                            console.log(income)
                             return <IncomeItem
                                 key={_id}
                                 id={_id} 
@@ -75,10 +73,6 @@ const ExpenseStyled = styled.div`
             flex: 1;
         }
     }
-    .form-container{
-        width: 250px;
-    }
-    
 `;
 
 export default Expenses

@@ -144,4 +144,4 @@ const ExpenseFormStyled = styled.form`
         }
     }
 `;
-export default ExpenseForm 
+export default ExpenseForm

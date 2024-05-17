@@ -84,7 +84,8 @@ export const GlobalProvider = ({children}) => {
             addExpense,
             getExpenses,
             deleteExpense,
-            totalExpenses
+            totalExpenses,
+            setError
             }}>
             {children}
         </GlobalContext.Provider>
