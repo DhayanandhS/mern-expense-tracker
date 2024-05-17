@@ -29,6 +29,13 @@ const Form = () => {
         
         addIncome(inputState)
         getIncomes()
+        setInputState({
+            title: '',
+            amount: '',
+            date: '',
+            category: '',
+            description: '',
+        })
     }
 
     return (
@@ -73,7 +80,7 @@ const Form = () => {
                     <option value="other">Other</option>  
                 </select>
             </div>
-            <div className="input-control">
+            <div className="input-control-description">
                 <textarea name="description" value={description} placeholder='Add A Reference' id="description" cols="30" rows="4" onChange={handleInput('description')}></textarea>
             </div>
             <div className="submit-btn">
@@ -112,13 +119,18 @@ const FormStyled = styled.form`
     }
     .input-control{
         input{
-            width: 100%;
+            width: 250px !important;
         }
+    }
+
+    .input-control-description textarea{
+        width: 250px;
     }
 
     .selects{
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        width: 250px !important;
         select{
             color: rgba(34, 34, 96, 0.4);
             &:focus, &:active{
@@ -128,6 +140,8 @@ const FormStyled = styled.form`
     }
 
     .submit-btn{
+        width: 200px;
+        height: 5px;
         button{
             box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
             &:hover{

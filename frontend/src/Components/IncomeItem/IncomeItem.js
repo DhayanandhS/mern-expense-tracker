@@ -99,6 +99,7 @@ const IncomeItemStyled = styled.div`
     border: 2px solid #FFFFFF;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
+    height: 90px !important;
     padding: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -107,8 +108,8 @@ const IncomeItemStyled = styled.div`
     width: 100%;
     color: #222260;
     .icon{
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         border-radius: 20px;
         background: #F5F5F5;
         display: flex;
@@ -124,7 +125,7 @@ const IncomeItemStyled = styled.div`
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: .2rem;
+        gap: .1rem;
         h5{
             font-size: 1.3rem;
             padding-left: 2rem;
@@ -149,7 +150,7 @@ const IncomeItemStyled = styled.div`
             .text{
                 display: flex;
                 align-items: center;
-                gap: 1.5rem;
+                gap: .5rem;
                 p{
                     display: flex;
                     align-items: center;
