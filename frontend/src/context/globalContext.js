@@ -68,7 +68,7 @@ export const GlobalProvider = ({children}) => {
             totalIncome = totalIncome + income.amount
         })
 
-        return totalIncome;
+        return totalIncome; 
     }
 
 
