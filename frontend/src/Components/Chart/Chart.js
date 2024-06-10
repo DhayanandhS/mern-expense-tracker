@@ -46,7 +46,7 @@ function Chart() {
                     })
                 ],
                 backgroundColor: 'green',
-                tension: .2
+                tension: .3
             },
             {
                 label: 'Expenses',
