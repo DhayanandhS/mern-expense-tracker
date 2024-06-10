@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { InnerLayout } from '../../styles/Layouts';
-import { Chart } from 'chart.js';
+import Chart from '../Chart/Chart.js';
+
 
 function Dashboard(){
     return(
