@@ -101,7 +101,8 @@ export const GlobalProvider = ({children}) => {
             totalExpenses,
             setError,
             totalBalance,
-            transactionHistory
+            transactionHistory,
+            error
             }}>
             {children}
         </GlobalContext.Provider>

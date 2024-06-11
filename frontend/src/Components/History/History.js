@@ -6,7 +6,7 @@ function History() {
     const {transactionHistory} = useGlobalContext()
 
     const [...history] = transactionHistory()
-
+ 
     return (
         <HistoryStyled>
             <h2>Recent History</h2>
